@@ -1,6 +1,9 @@
-﻿Imports System.IO
+﻿Imports System.Configuration
+Imports System.IO
+Imports System.Reflection
 
 Public Class Form1
+    Dim records(50) As String
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         Field1.Text = ""
         Field2.Text = ""
@@ -32,5 +35,17 @@ Public Class Form1
         outFile.Write("|")
         outFile.WriteLine(PictureBox1.ImageLocation)
         outFile.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (IO.File.Exists("Data.txt")) Then
+            Dim inFile As New StreamReader("Data.txt")
+            Dim IDX As Integer = 0
+            While (Not inFile.EndOfStream)
+                records(IDX) = inFile.ReadLine
+                IDX += 1
+            End While
+            inFile.Close()
+        End If
     End Sub
 End Class
