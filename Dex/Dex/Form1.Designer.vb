@@ -38,6 +38,10 @@ Partial Class Form1
         Me.Field4 = New System.Windows.Forms.TextBox()
         Me.Field5 = New System.Windows.Forms.TextBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Button1st = New System.Windows.Forms.Button()
+        Me.ButtonNext = New System.Windows.Forms.Button()
+        Me.ButtonEnd = New System.Windows.Forms.Button()
+        Me.ButtonPrev = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -165,11 +169,51 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'Button1st
+        '
+        Me.Button1st.Location = New System.Drawing.Point(16, 374)
+        Me.Button1st.Name = "Button1st"
+        Me.Button1st.Size = New System.Drawing.Size(55, 29)
+        Me.Button1st.TabIndex = 12
+        Me.Button1st.Text = "1st"
+        Me.Button1st.UseVisualStyleBackColor = True
+        '
+        'ButtonNext
+        '
+        Me.ButtonNext.Location = New System.Drawing.Point(148, 374)
+        Me.ButtonNext.Name = "ButtonNext"
+        Me.ButtonNext.Size = New System.Drawing.Size(55, 29)
+        Me.ButtonNext.TabIndex = 13
+        Me.ButtonNext.Text = ">"
+        Me.ButtonNext.UseVisualStyleBackColor = True
+        '
+        'ButtonEnd
+        '
+        Me.ButtonEnd.Location = New System.Drawing.Point(214, 374)
+        Me.ButtonEnd.Name = "ButtonEnd"
+        Me.ButtonEnd.Size = New System.Drawing.Size(55, 29)
+        Me.ButtonEnd.TabIndex = 14
+        Me.ButtonEnd.Text = "End"
+        Me.ButtonEnd.UseVisualStyleBackColor = True
+        '
+        'ButtonPrev
+        '
+        Me.ButtonPrev.Location = New System.Drawing.Point(82, 374)
+        Me.ButtonPrev.Name = "ButtonPrev"
+        Me.ButtonPrev.Size = New System.Drawing.Size(55, 29)
+        Me.ButtonPrev.TabIndex = 15
+        Me.ButtonPrev.Text = "<"
+        Me.ButtonPrev.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(281, 373)
+        Me.ClientSize = New System.Drawing.Size(281, 403)
+        Me.Controls.Add(Me.ButtonPrev)
+        Me.Controls.Add(Me.ButtonEnd)
+        Me.Controls.Add(Me.ButtonNext)
+        Me.Controls.Add(Me.Button1st)
         Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Field4)
         Me.Controls.Add(Me.Field3)
@@ -209,4 +253,8 @@ Partial Class Form1
     Friend WithEvents Field4 As TextBox
     Friend WithEvents Field5 As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Button1st As Button
+    Friend WithEvents ButtonNext As Button
+    Friend WithEvents ButtonEnd As Button
+    Friend WithEvents ButtonPrev As Button
 End Class
