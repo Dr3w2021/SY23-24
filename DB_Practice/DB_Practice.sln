@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DB_Practice", "DB_Practice\DB_Practice.vbproj", "{E268CA89-2D50-489C-AE32-09AF09C44884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Debug|x86.ActiveCfg = Debug|x86
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Debug|x86.Build.0 = Debug|x86
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Release|x86.ActiveCfg = Release|x86
+		{E268CA89-2D50-489C-AE32-09AF09C44884}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6E96E47-4CE5-44A9-B17F-E292C2D937D6}
+	EndGlobalSection
+EndGlobal
