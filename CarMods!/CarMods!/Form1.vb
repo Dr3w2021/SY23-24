@@ -14,7 +14,7 @@
         End If
 
         If suspensionMod Then
-            totalPrice += SuspensionPrice
+            totalPrice += SuspensionPrice g
         End If
 
         If exhaustMod Then
